@@ -1,0 +1,43 @@
+{
+  "name": "base-portal",
+  "version": "1.0.0",
+  "description": "micro front-end portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 9000",
+    "build": "webpack -p --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.yeahka.com/frontend/base-portal.git"
+  },
+  "keywords": [
+    "portal",
+    "micro-service",
+    "front-end"
+  ],
+  "author": "Cagee",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-stage-0": "^7.0.0",
+    "@babel/preset-stage-3": "^7.0.0",
+    "@babel/runtime": "^7.4.3",
+    "single-spa": "^4.3.2",
+    "systemjs": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

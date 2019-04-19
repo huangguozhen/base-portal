@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --port 9000",
     "build": "webpack -p --progress",
+    "bundle-report": "webpack-bundle-analyzer --port 8323 build/stats.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,6 +32,7 @@
     "clean-webpack-plugin": "^2.0.1",
     "copy-webpack-plugin": "^5.0.2",
     "webpack": "^4.30.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
   }

@@ -1,6 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: {
@@ -24,6 +25,11 @@ module.exports = {
     modules: [ __dirname, 'node_modules' ]
   },
   plugins: [
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'disabled',
+      generateStatsFile: true,
+      statsOptions: { Source: false }
+    }),
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, 'public/index.html')},
       { from: path.resolve(__dirname, 'public/system.js') }
